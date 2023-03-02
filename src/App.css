@@ -1,38 +1,81 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Neucha&family=Rubik+Iso&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  color: white;
+  background-color: black;
+  font-family: 'Neucha', cursive;
+  font-size: 1.2rem;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+body div{
+  margin: 1rem;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+h1 {
+  text-shadow: 0 0.3rem 0.3rem rgb(0, 162, 255);
+  padding-bottom: 2rem;
+  font-family: 'Rubik Iso', cursive;
+  font-size: 5rem;
+}
+
+table  {
+  width: 20rem;
+  text-align: center;
+  color: rgb(51, 51, 51);
+}
+
+table, th, td {
+  border: 1px solid white;
+  background-color: rgb(198, 198, 198);
+  border-collapse: collapse;
+}
+
+th {
+  background-color: darkgrey; ;
+  height: 2.5rem;
+  text-transform: uppercase;
+  color: black;
+}
+
+table {
+  width: 80vw;
+  height: 20rem;
+}
+
+.out-of-stock td {
+  background-color: rgb(251, 53, 53);
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+::placeholder{
+  font-style: italic;
+  color: rgb(165, 165, 165);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.CheckBox label {
+  font-style: italic;
+  font-weight: 600;
+  font-size: 0.8rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.CheckBox input {
+  margin: 0.3rem;
+}
+
+.SearchBar > label {
+  font-size: 1.2rem;
+  font-weight: 600;
 }
